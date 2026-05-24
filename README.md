@@ -1,8 +1,8 @@
 # @hitaqnia/react
 
-React bindings for the [Huwiya Identity Provider](https://github.com/HiTaqnia/huwiya-backend) — OAuth2 PKCE authentication for React and Next.js applications.
+React bindings for the [Huwiya Identity Provider](https://github.com/hitaqnia/huwiya-backend) — OAuth2 PKCE authentication for React and Next.js applications.
 
-This package is the React layer on top of [`@hitaqnia/core`](../huwiya-js). Use this package if you have a React app; use `@hitaqnia/core` directly if you're on another framework or in plain JS/Node.
+This package is the React layer on top of [`@hitaqnia/core`](https://github.com/hitaqnia/huwiya-js). Use this package if you have a React app; use `@hitaqnia/core` directly if you're on another framework or in plain JS/Node.
 
 ## Installation
 

@@ -34,7 +34,7 @@
     "prepublishOnly": "npm run lint && npm run test && npm run build"
   },
   "dependencies": {
-    "@hitaqnia/core": "file:../huwiya-js"
+    "@hitaqnia/core": "^0.1.0"
   },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0"
@@ -50,12 +50,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HiTaqnia/huwiya-react.git"
+    "url": "git+https://github.com/hitaqnia/huwiya-react.git"
   },
   "bugs": {
-    "url": "https://github.com/HiTaqnia/huwiya-react/issues"
+    "url": "https://github.com/hitaqnia/huwiya-react/issues"
   },
-  "homepage": "https://github.com/HiTaqnia/huwiya-react#readme",
+  "homepage": "https://github.com/hitaqnia/huwiya-react#readme",
   "author": "HiTaqnia",
   "license": "MIT",
   "keywords": [

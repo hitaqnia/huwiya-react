@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- **Split**: extracted the framework-agnostic JS into a new [`@hitaqnia/core`](../huwiya-js) package. `@hitaqnia/react` now depends on `@hitaqnia/core` and only ships the React provider, hooks, and context. Every symbol from `@hitaqnia/core` is re-exported from `@hitaqnia/react` so existing imports keep working unchanged — no breaking changes for consumers.
+- **Split**: extracted the framework-agnostic JS into a new [`@hitaqnia/core`](https://github.com/hitaqnia/huwiya-js) package. `@hitaqnia/react` now depends on `@hitaqnia/core` and only ships the React provider, hooks, and context. Every symbol from `@hitaqnia/core` is re-exported from `@hitaqnia/react` so existing imports keep working unchanged — no breaking changes for consumers.
 - `provider.tsx` and `hooks.ts` now import their non-React building blocks (`HuwiyaClient`, `TokenStorage`, `extractUser`, types) from `@hitaqnia/core`.
 - `HuwiyaContext` is now exported from the package entry point alongside `HuwiyaProvider`.
 
