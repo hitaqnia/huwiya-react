@@ -1,0 +1,75 @@
+{
+  "name": "@hitaqnia/react",
+  "version": "0.2.0",
+  "description": "React SDK for Huwiya Identity Provider - OAuth2 PKCE authentication (built on @hitaqnia/core)",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --no-splitting --sourcemap --external react --external @hitaqnia/core",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --no-splitting --sourcemap --external react --external @hitaqnia/core --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run lint && npm run test && npm run build"
+  },
+  "dependencies": {
+    "@hitaqnia/core": "file:../huwiya-js"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "jsdom": "^25.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HiTaqnia/huwiya-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HiTaqnia/huwiya-react/issues"
+  },
+  "homepage": "https://github.com/HiTaqnia/huwiya-react#readme",
+  "author": "HiTaqnia",
+  "license": "MIT",
+  "keywords": [
+    "huwiya",
+    "idp",
+    "identity-provider",
+    "oauth2",
+    "pkce",
+    "react",
+    "authentication",
+    "auth",
+    "sso"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
