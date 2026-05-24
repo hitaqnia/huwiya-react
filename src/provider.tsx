@@ -9,7 +9,7 @@ import {
   type HuwiyaContextValue,
   type HuwiyaUser,
   type StoredTokens,
-} from "@hitaqnia/core";
+} from "@hitaqnia/huwiya-core";
 
 export const HuwiyaContext = createContext<HuwiyaContextValue | null>(null);
 

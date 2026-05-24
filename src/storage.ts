@@ -1,5 +1,5 @@
 /**
- * Re-export of `TokenStorage` from `@hitaqnia/core`. New code should import from
- * `@hitaqnia/core` directly.
+ * Re-export of `TokenStorage` from `@hitaqnia/huwiya-core`. New code should import from
+ * `@hitaqnia/huwiya-core` directly.
  */
-export { TokenStorage, STORAGE_KEYS } from "@hitaqnia/core";
+export { TokenStorage, STORAGE_KEYS } from "@hitaqnia/huwiya-core";

@@ -1,6 +1,6 @@
 /**
- * @hitaqnia/react — React bindings for the Huwiya Identity Provider OAuth2
- * PKCE client. Built on top of `@hitaqnia/core`, which is also re-exported
+ * @hitaqnia/huwiya-react — React bindings for the Huwiya Identity Provider OAuth2
+ * PKCE client. Built on top of `@hitaqnia/huwiya-core`, which is also re-exported
  * here for convenience.
  */
 
@@ -8,7 +8,7 @@
 export { HuwiyaProvider, HuwiyaContext } from "./provider";
 export { useHuwiya, useUser, useToken } from "./hooks";
 
-// Re-exports from @hitaqnia/core so consumers don't have to install it
+// Re-exports from @hitaqnia/huwiya-core so consumers don't have to install it
 // separately when they only want everything from one entry point.
 export {
   HuwiyaClient,
@@ -19,7 +19,7 @@ export {
   generateCodeChallenge,
   generateCodeVerifier,
   generateState,
-} from "@hitaqnia/core";
+} from "@hitaqnia/huwiya-core";
 
 export type {
   HuwiyaAuthState,
@@ -30,4 +30,4 @@ export type {
   StorageStrategy,
   StoredTokens,
   TokenResponse,
-} from "@hitaqnia/core";
+} from "@hitaqnia/huwiya-core";

@@ -1,7 +1,7 @@
 "use client";
 
 import { useContext } from "react";
-import type { HuwiyaContextValue, HuwiyaUser } from "@hitaqnia/core";
+import type { HuwiyaContextValue, HuwiyaUser } from "@hitaqnia/huwiya-core";
 import { HuwiyaContext } from "./provider";
 
 function useHuwiyaContext(): HuwiyaContextValue {

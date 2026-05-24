@@ -1,9 +1,9 @@
 /**
- * Re-export of the PKCE helpers from `@hitaqnia/core`. New code should import
- * from `@hitaqnia/core` directly.
+ * Re-export of the PKCE helpers from `@hitaqnia/huwiya-core`. New code should import
+ * from `@hitaqnia/huwiya-core` directly.
  */
 export {
   generateCodeChallenge,
   generateCodeVerifier,
   generateState,
-} from "@hitaqnia/core";
+} from "@hitaqnia/huwiya-core";

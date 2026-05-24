@@ -1,14 +1,14 @@
 /**
- * Sanity check: the `@hitaqnia/react` re-export of `HuwiyaClient` is the same
- * class as `@hitaqnia/core`'s `HuwiyaClient`. The full behavioral test suite
- * lives in `@hitaqnia/core`.
+ * Sanity check: the `@hitaqnia/huwiya-react` re-export of `HuwiyaClient` is the same
+ * class as `@hitaqnia/huwiya-core`'s `HuwiyaClient`. The full behavioral test suite
+ * lives in `@hitaqnia/huwiya-core`.
  */
 import { describe, expect, it } from "vitest";
 import { HuwiyaClient as ReactHuwiyaClient } from "../src/client";
-import { HuwiyaClient as CoreHuwiyaClient } from "@hitaqnia/core";
+import { HuwiyaClient as CoreHuwiyaClient } from "@hitaqnia/huwiya-core";
 
 describe("HuwiyaClient re-export", () => {
-  it("is the same class exported from @hitaqnia/core", () => {
+  it("is the same class exported from @hitaqnia/huwiya-core", () => {
     expect(ReactHuwiyaClient).toBe(CoreHuwiyaClient);
   });
 

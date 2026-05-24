@@ -1,7 +1,7 @@
 /**
- * Re-export of all types from `@hitaqnia/core`. Kept so existing imports from
- * `@hitaqnia/react/types` keep working — new code should import directly from
- * `@hitaqnia/core`.
+ * Re-export of all types from `@hitaqnia/huwiya-core`. Kept so existing imports from
+ * `@hitaqnia/huwiya-react/types` keep working — new code should import directly from
+ * `@hitaqnia/huwiya-core`.
  */
 export type {
   HuwiyaAuthState,
@@ -11,4 +11,4 @@ export type {
   StorageStrategy,
   StoredTokens,
   TokenResponse,
-} from "@hitaqnia/core";
+} from "@hitaqnia/huwiya-core";

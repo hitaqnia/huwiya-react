@@ -9,8 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- **Split**: extracted the framework-agnostic JS into a new [`@hitaqnia/core`](https://github.com/hitaqnia/huwiya-js) package. `@hitaqnia/react` now depends on `@hitaqnia/core` and only ships the React provider, hooks, and context. Every symbol from `@hitaqnia/core` is re-exported from `@hitaqnia/react` so existing imports keep working unchanged — no breaking changes for consumers.
-- `provider.tsx` and `hooks.ts` now import their non-React building blocks (`HuwiyaClient`, `TokenStorage`, `extractUser`, types) from `@hitaqnia/core`.
+- **Split**: extracted the framework-agnostic JS into a new [`@hitaqnia/huwiya-core`](https://github.com/hitaqnia/huwiya-js) package. `@hitaqnia/huwiya-react` now depends on `@hitaqnia/huwiya-core` and only ships the React provider, hooks, and context. Every symbol from `@hitaqnia/huwiya-core` is re-exported from `@hitaqnia/huwiya-react` so existing imports keep working unchanged — no breaking changes for consumers.
+- `provider.tsx` and `hooks.ts` now import their non-React building blocks (`HuwiyaClient`, `TokenStorage`, `extractUser`, types) from `@hitaqnia/huwiya-core`.
 - `HuwiyaContext` is now exported from the package entry point alongside `HuwiyaProvider`.
 
 ### Added
@@ -19,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Notes
 
-- The `src/client.ts`, `src/jwt.ts`, `src/pkce.ts`, `src/storage.ts`, and `src/types.ts` modules are now thin re-exports of `@hitaqnia/core` for backwards compatibility with deep imports. New code should import from `@hitaqnia/core` (or from the `@hitaqnia/react` entry point).
+- The `src/client.ts`, `src/jwt.ts`, `src/pkce.ts`, `src/storage.ts`, and `src/types.ts` modules are now thin re-exports of `@hitaqnia/huwiya-core` for backwards compatibility with deep imports. New code should import from `@hitaqnia/huwiya-core` (or from the `@hitaqnia/huwiya-react` entry point).
 
 ## [0.1.0] - 2026-04-12
 

@@ -1,7 +1,7 @@
 {
-  "name": "@hitaqnia/react",
+  "name": "@hitaqnia/huwiya-react",
   "version": "0.2.0",
-  "description": "React SDK for Huwiya Identity Provider - OAuth2 PKCE authentication (built on @hitaqnia/core)",
+  "description": "React SDK for Huwiya Identity Provider - OAuth2 PKCE authentication (built on @hitaqnia/huwiya-core)",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -25,8 +25,8 @@
     "CHANGELOG.md"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts --no-splitting --sourcemap --external react --external @hitaqnia/core",
-    "dev": "tsup src/index.ts --format esm,cjs --dts --no-splitting --sourcemap --external react --external @hitaqnia/core --watch",
+    "build": "tsup src/index.ts --format esm,cjs --dts --no-splitting --sourcemap --external react --external @hitaqnia/huwiya-core",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --no-splitting --sourcemap --external react --external @hitaqnia/huwiya-core --watch",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
@@ -34,7 +34,7 @@
     "prepublishOnly": "npm run lint && npm run test && npm run build"
   },
   "dependencies": {
-    "@hitaqnia/core": "^0.1.0"
+    "@hitaqnia/huwiya-core": "^0.1.0"
   },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0"
